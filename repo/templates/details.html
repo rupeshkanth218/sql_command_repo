@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Detail Command{% endblock %}
+
+{% block content %}
+    
+    <a class="btn btn-primary" href="{% url 'home' %}" role="button">HOME</a>
+    <h3>{{ object.name }}</h3>
+    <br>
+    <p><pre>{{ object.code }}</pre></p>
+    <br>
+
+
+{% endblock %}
